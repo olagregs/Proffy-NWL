@@ -1,1 +1,122 @@
-forms.css  give-classes-page.css  header.css
+.page-header {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  transition: .35s;
+}
+
+.page-header .top-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .top-bar-container a {
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover {
+  opacity: 0.6;
+}
+
+.page-header .top-bar-container > img {
+  height: 1.6rem;
+}
+
+.page-header .top-bar-container .themes #switchTheme {
+  position: absolute;
+  visibility: hidden;
+}
+
+.page-header .top-bar-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page-header .top-bar-container .themes .circle .tms {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  transition: .35s;
+}
+
+.page-header .top-bar-container .themes .circle .lightMode {
+  position: absolute;
+  background-color: #dddddd;
+  transform: scale(1);
+}
+
+.page-header .top-bar-container .themes .circle .darkMode {
+  background-color: #333333;
+  transform: scale(.1);
+}
+
+.page-header .top-bar-container .themes .circle .tms img {
+  height: 2.5rem;
+}
+
+.page-header .top-bar-container .themes #switchTheme:checked ~ .circle .lightMode{
+  transform: rotate(45deg) scale(.1);
+  z-index: 1;
+}
+
+.page-header .top-bar-container .themes #switchTheme:checked ~ .circle .darkMode{
+  transform: scale(1) rotate(-360deg);
+  z-index: 2;
+}
+
+.page-header .header-content {
+  width: 90%;
+  margin: 3.2rem auto;
+  position: relative;
+}
+
+.page-header .header-content strong {
+  font: 700 3.6rem Archivo;
+  color: var(--color-titlep);
+  line-height: 4.2rem;
+}
+
+.page-header .header-content p {
+  max-width: 30rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-textp);
+  margin-top: 2.4rem;
+}
+
+@media (min-width: 700px) {
+  .page-header {
+    height: 340px;
+  }
+
+  .page-header .top-bar-container {
+    max-width: 1100px;
+  }
+
+  .page-header .header-content {
+    margin: 0 auto;
+    max-width: 740px;
+    flex: 1 1;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header .header-content strong {
+    max-width: 350px;
+  }
+}

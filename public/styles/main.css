@@ -1,1 +1,67 @@
-main.css  partials
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-thumb);
+  border-radius: 5rem;
+  transition: .35s;
+}
+
+:root {
+  --color-thumb: #4c3386;
+  --color-background: #F0F0F7;
+  --color-primaryltr: #9871F5;
+  --color-primaryl: #916BEA;
+  --color-indicator: #6b3ed3;
+  --color-primary: #8257E5;
+  --color-primaryd: #774DD6;
+  --color-primarydkr: #6842c2;
+  --color-secondary: #04D361;
+  --color-secondaryd: #04BF58;
+  --color-titlep: #FFFFFF;
+  --color-textp: #D4C2FF;
+  --color-title: #32264D;
+  --color-textc: #9C98A6;
+  --color-text: #6A6180;
+  --color-line: #E6E6F0;
+  --color-input: #F8F8FC;
+  --color-button: #FFFFFF;
+  --color-box: #FFFFFF;
+  --color-footer: #FAFAFC;
+  --color-small: #C1BCCC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  transition: .35s;
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, input, button, textarea {
+  font: 500 1.6em Poppins;
+  color: var(--color-text);
+}
+
+#container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
