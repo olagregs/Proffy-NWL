@@ -11,6 +11,8 @@
   <img src="./public/images/screens/screen1-black.JPG">
   <img src="./public/images/screens/screen2.JPG">
   <img src="./public/images/screens/screen2-black.JPG">
+  <img src="./public/images/screens/screen-proffy.JPG">
+  <img src="./public/images/screens/screen-results.JPG">
   <img src="./public/images/screens/screen3.JPG">
   <img src="./public/images/screens/screen3-black.JPG">
 </p>
